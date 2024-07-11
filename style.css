@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-bg {
+  position: fixed;
+  background-color: wheat;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 5%;
+}
+header h1 {
+  font-size: 36px;
+  border-radius: 150px;
+}
+header h1.active {
+  background: #5247b9;
+}
+header h1:hover {
+  font-size: 46px;
+}
+body {
+  overflow: auto;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  background: url("assests/night.png") center/cover no-repeat;
+  overflow: hidden;
+}
+.home img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.title {
+  position: absolute;
+  top: 30%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 64px;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+.title2 {
+  position: absolute;
+  top: 245%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 64px;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+.day {
+  display: flex;
+
+  height: 100dvh;
+  width: 100%;
+  background: url("assests/morningsky.jpg") center/cover no-repeat;
+}
+.day img {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  pointer-events: none;
+}

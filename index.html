@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shoot 'Em Up Game</title>
+    <link rel="stylesheet" href="./style/logic.css" />
+    <script src="/js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- game part -->
+    <div class="game">
+      <div class="sniper"></div>
+      <div class="bullet"></div>
+      <div class="target bouncing"></div>
+      <div class="scope"></div>
+      <div class="scope-zoom"></div>
+      <div class="collison">
+        <div class="collison-content">
+          <h2>You Won!</h2>
+          <br />
+          <p>
+            <button
+              class="reset"
+              style="
+                background-color: crimson;
+                border-radius: 20%;
+                color: white;
+              "
+            >
+              Play Again
+            </button>
+          </p>
+        </div>
+      </div>
+      <button class="fire">Fire</button>
+      <button class="reload">Reload</button>
+    </div>
+  </body>
+</html>
